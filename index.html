@@ -22,14 +22,77 @@
 
         <div class="main">
 
-            <div id="projects">
+            <div class="container" id="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello, my name is Elyon Brown. 
+                    I'm a software developer who specializes in game design and development.
+                </p>
+                <p>
+                    Using ym go-to programming language, C#, I like to experiment
+                    with different game engines, mechanics, and rendering methods.
+                </p>
+            </div>
+
+            <div class="container" id="education">
+                <h2>Education</h2>
+                <h3>Mohawk College of Applied Arts and Technology</h3>
+                <p>Computer Systems Technology - Software Development</p>
+            </div>
+
+            <div class="container" id="skills">
+                <h2>Skills</h2>
+                <div class="row row-cols-1" id="green">
+                    <p class="col">C# and .NET</p>
+                </div>
+                <div class="row row-cols-2" id="yellow">
+                    <p class="col">Java</p>
+                    <p class="col">JavaScript</p>
+                </div>
+                <div class="row row-cols-3" id="orange">
+                    <p class="col">PHP</p>
+                    <p class="col">Git Bash</p>
+                    <p class="col">HTML and CSS</p>
+                </div>
+                <div class="row row-cols-4" id="red">
+                    <p class="col">C++</p>
+                    <p class="col">ASP.NET</p>
+                    <p class="col">ReactJS</p>
+                    <p class="col">DirectX</p>
+                </div>
+            </div>
+
+            <div class="container" id="projects">
                 <h2>Projects</h2>
-                <svg id="board" width="600" height="600" xmlns="http://www.w3.org/2000/svg">
-                    <!--<circle id="circle2" cx="50" cy="50" r="25" style="fill:red;" />-->
-                    Sorry, your browser does not support inline SVG.
-                </svg>
-                <h3 id="turn">black </h3>
-                <button class="btn btn-primary" onclick="reset()">Reset</button>
+                <div class="row row-cols-2">
+                    <div class="col-auto">
+                        <h3>Othello</h3>
+                        <svg id="board" width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+                            <!--<circle id="circle2" cx="50" cy="50" r="25" style="fill:red;" />-->
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <div class="row">
+                            <h4 class="col" id="turn">black </h4>
+                            <button class="btn btn-primary col" onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <div clas="col-sm-1">
+                        <h3>Raytracing in C#</h3>
+                        <img alt="Raytracing" src="Images/Raytracer.png" width="90%"/>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="container" id="resume">
+                <h2>Resume</h2>
+                <object class="pdf" 
+                        data="Images/Elyon Brown Resume (CS Version).pdf"
+                        width="700"
+                        height="700"
+                >
+                </object>
             </div>
         </div>
 

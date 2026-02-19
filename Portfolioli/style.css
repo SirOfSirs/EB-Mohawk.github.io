@@ -1,0 +1,26 @@
+#skills p{
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    padding: 1em;
+}
+
+#green p{
+    background-color: green;
+    color: white;
+}
+
+#yellow p{
+    background-color: yellow;
+    color: black;
+}
+
+#orange p{
+    background-color: orange;
+    color: white;
+}
+
+#red p{
+    background-color: red;
+    color: white;
+}
