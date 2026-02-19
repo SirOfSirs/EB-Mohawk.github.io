@@ -1,8 +1,12 @@
+body{
+    background-color: palegreen;
+}
+
 #skills p{
     text-align: center;
-    border-style: solid;
-    border-color: white;
     padding: 1em;
+    border-style: solid;
+    border-color: rgba(0,0,0, 0.25);
 }
 
 #green p{
@@ -23,4 +27,71 @@
 #red p{
     background-color: red;
     color: white;
+}
+
+header{
+    padding: 3em;
+    background-color: mediumseagreen;
+    color: white;
+}
+
+footer{
+    padding: 3em;
+    background-color: mediumseagreen;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color:white;
+}
+
+h1, h2{
+    font-weight: bolder;
+}
+
+nav a{
+    padding: 1em;
+    background-color: mediumseagreen;
+    text-decoration: none;
+    color: white;
+
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: seagreen;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    border-style: solid;
+    border-color: rgba(0,0,0, 0.25);
+}
+
+.container-fluid{
+    margin: 1em;
+    padding: 3em;
+    width: auto;
+}
+
+.container-fluid:hover{
+    /*background-color: seagreen;*/
+    animation: containerHighlight 1s;
+    animation-fill-mode: forwards;
+}
+
+#resume{
+    text-align: center;
+}
+
+@keyframes containerHighlight{
+    from {background-color: none;}
+    to {
+        background-color: seagreen;
+        color: white; 
+        border-style: solid;
+        border-color: rgba(0,0,0, 0.25);
+    }
 }
